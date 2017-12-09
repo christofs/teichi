@@ -37,8 +37,8 @@ jQuery(document).ready(function ()
 });
 /*
  //TODO: use tempelates prefix classes with tei-image!
-  var toolTipHTML= " <div class='tooltip'> <img class='previewIMG' src='xxx.png' alt='open page in imageviwer'\>  </div>"; 
-// var toolTipHTML= " <div class='tooltip'> <a class='pagelink'> <img class='previewIMG' src='xxx.png' alt='open page in imageviwer'\> </a>  </div>"; 
+  var toolTipHTML= " <div class='ImageviewerTooltip'> <img class='previewIMG' src='xxx.png' alt='open page in imageviwer'\>  </div>"; 
+// var toolTipHTML= " <div class='ImageviewerTooltip'> <a class='pagelink'> <img class='previewIMG' src='xxx.png' alt='open page in imageviwer'\> </a>  </div>"; 
   var seadragonContainerHTML= "<div class='container'\>"; 
   jQuery('body').html(jQuery('body').html()+toolTipHTML+seadragonContainerHTML);
 });*/
@@ -66,12 +66,12 @@ Drupal.changeIMG = function (a, bookPath) {
 	console.log("img with id:"+id);
   var offset = a.offset();
 
-    jQuery(".tooltip").css({position: "absolute"});
-    jQuery(".tooltip").offset({top: offset.top-190});
+    jQuery(".ImageviewerTooltip").css({position: "absolute"});
+    jQuery(".ImageviewerTooltip").offset({top: offset.top-190});
     
   console.log("offset"+offset.top +","+offset.left);
 
-  var img = jQuery(".tooltip img");
+  var img = jQuery(".ImageviewerTooltip img");
       img.css("display","inline");  
       img.attr("src",id);
       
@@ -88,7 +88,19 @@ Drupal.behaviors.tei_imageviewer = {
  
    // look for img path
    // defiend in viewer-conf.js
-      var conf = getConfig( (currentBook === undefined) ? "default"  :   String(currentBook)); 
+   
+   // look for img path
+   // defiend in viewer-conf.js
+   var conf;
+    // handle undefind variable TODO:BUG?
+    if((typeof currentBook === "undefined")) {
+	 var currentBook = 0;
+	 console.log("undefined variable: currentBook");
+	 conf = getConfig("default"); 
+	}
+	else {
+	 conf = getConfig( String(currentBook));
+	}
    
   console.log("use conf for book nr:"+currentBook);
   console.dir(conf); 
@@ -168,7 +180,7 @@ Drupal.behaviors.tei_imageviewer = {
 **/
 Drupal.closeTooltip = function () {
 
- jQuery(".tooltip img").css("display","none");
+ jQuery(".ImageviewerTooltip img").css("display","none");
 
 }
 /**
