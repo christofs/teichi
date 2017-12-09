@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab"><script type="text/javascript" src="/static/js/analytics.js?v=1512696645.0" charset="utf-8"></script>
+
+<script type="text/javascript">archive_analytics.values.service='wb';archive_analytics.values.server_name='wwwb-app43.us.archive.org';archive_analytics.values.server_ms=324;</script><script type="text/javascript" src="/static/js/wbhack.js?v=1512696645.0" charset="utf-8"></script>
+
+<script type="text/javascript">
+__wbhack.init('https://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/banner-styles.css?v=1512696645.0" />
+<link rel="stylesheet" type="text/css" href="/static/css/iconochive.css?v=1512696645.0" />
+
+<!-- End Wayback Rewrite JS Include -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="next" href="/web/20161025194619/http://www.teichi.org:80/tei-download"/>
+<link rel="shortcut icon" href="https://web.archive.org/web/20161025194619im_/http://www.teichi.org/misc/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="up" href="/documentation"/>
+<link rel="shortlink" href="/node/15"/>
+<meta name="Generator" content="Drupal 7 (http://drupal.org)"/>
+<link rel="canonical" href="/web/20161025194619/http://www.teichi.org:80/tei-content"/>
+<link rel="prev" href="/web/20161025194619/http://www.teichi.org:80/introduction"/>
+  <title>Installing and using the TEI Content module | TEICHI</title>
+  <style type="text/css" media="all">
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/system/system.base.css?nhr6n0");
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/system/system.menus.css?nhr6n0");
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/system/system.messages.css?nhr6n0");
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/system/system.theme.css?nhr6n0");
+</style>
+<style type="text/css" media="all">
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/book/book.css?nhr6n0");
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/field/theme/field.css?nhr6n0");
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/node/node.css?nhr6n0");
+</style>
+<style type="text/css" media="screen">
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/sites/all/modules/tei_imageviewer/css/tei_imageviewer.css?nhr6n0");
+</style>
+<style type="text/css" media="all">
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/modules/user/user.css?nhr6n0");
+</style>
+<style type="text/css" media="all">
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/sites/all/themes/mayo/css/layout.css?nhr6n0");
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/sites/all/themes/mayo/css/style.css?nhr6n0");
+@import url("https://web.archive.org/web/20161025194619cs_/http://www.teichi.org/sites/default/files/color/mayo-5831e621/colors.css?nhr6n0");
+</style>
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="http://www.teichi.org/sites/all/themes/mayo/css/ie8.css?nhr6n0" media="all" />
+<![endif]-->
+
+<!--[if  IE 7]>
+<link type="text/css" rel="stylesheet" href="http://www.teichi.org/sites/all/themes/mayo/css/ie.css?nhr6n0" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://www.teichi.org/sites/all/themes/mayo/css/ie6.css?nhr6n0" media="all" />
+<![endif]-->
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+body{font-size:93.75%;font-family:Verdana,Geneva,Arial,'Bitstream Vera Sans','DejaVu Sans',Meiryo,'Hiragino Kaku Gothic Pro','MS PGothic',Osaka,sans-serif;}
+h1,h2,h3,h4,h5{font-family:Verdana,Geneva,Arial,'Bitstream Vera Sans','DejaVu Sans',Meiryo,'Hiragino Kaku Gothic Pro','MS PGothic',Osaka,sans-serif;}
+.sidebar h2{font-size:1.2em;}
+#content .node h2{font-size:1.4em;}
+
+/*]]>*/-->
+</style>
+  <script type="text/javascript" src="https://web.archive.org/web/20161025194619js_/http://www.teichi.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20161025194619js_/http://www.teichi.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://web.archive.org/web/20161025194619js_/http://www.teichi.org/misc/drupal.js?nhr6n0"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mayo","theme_token":"43nUL7zp0HxYSv8i-CJlhyIsc3x-WUR2dI5Gg5jizxU","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/tei_imageviewer\/css\/tei_imageviewer.css":1,"modules\/user\/user.css":1,"sites\/all\/themes\/mayo\/css\/layout.css":1,"sites\/all\/themes\/mayo\/css\/style.css":1,"sites\/all\/themes\/mayo\/css\/colors.css":1,"sites\/all\/themes\/mayo\/css\/ie8.css":1,"sites\/all\/themes\/mayo\/css\/ie.css":1,"sites\/all\/themes\/mayo\/css\/ie6.css":1,"0":1,"1":1,"2":1,"3":1}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-15 node-type-page"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/timestamp.js?v=1512696645.0" charset="utf-8"></script>
+<script type="text/javascript" src="/static/js/graph-calc.js?v=1512696645.0" charset="utf-8"></script>
+<script type="text/javascript" src="/static/js/auto-complete.js?v=1512696645.0" charset="utf-8"></script>
+<script type="text/javascript" src="/static/js/toolbar.js?v=1512696645.0" charset="utf-8"></script>
+
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+.wb-autocomplete-suggestions {
+    text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
+}
+.wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
+.wb-autocomplete-suggestion b { font-weight: bold; }
+.wb-autocomplete-suggestion.selected { background: #f0f0f0; }
+</style>
+<div id="wm-ipp" lang="en" style="display:none;direction:ltr;">
+<div style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:130px;padding-top:10px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a href="#"
+             onclick="__wm.saveSnapshot('http://www.teichi.org:80/tei-content', '20161025194619')"
+             title="Save to My Web Archive"
+             id="wm-save-snapshot-open"
+          >
+            <span class="iconochive-web"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share" style="text-align:right;">
+	<a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://web.archive.org/web/20161025194619/http://www.teichi.org:80/tei-content', '', 'height=400,width=600'); return false;" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=https://web.archive.org/web/20161025194619/http://www.teichi.org:80/tei-content&amp;via=internetarchive', '', 'height=400,width=600'); return false;" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.teichi.org:80/tei-content" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20161025194619" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20160924185116/http://www.teichi.org:80/tei-content" title="24 Sep 2016"><strong>Sep</strong></a></td>
+		  <td class="c" id="displayMonthEl" title="You are here: 19:46:19 Oct 25, 2016">OCT</td>
+		  <td class="f" nowrap="nowrap">Nov</td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20160924185116/http://www.teichi.org:80/tei-content" title="18:51:16 Sep 24, 2016"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 19:46:19 Oct 25, 2016">25</td>
+		  <td class="f" nowrap="nowrap"><img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20121127145030/http://www.teichi.org:80/tei-content" title="27 Nov 2012"><strong>2012</strong></a></td>
+		  <td class="c" id="displayYearEl" title="You are here: 19:46:19 Oct 25, 2016">2016</td>
+		  <td class="f" nowrap="nowrap">2017</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20161025194619*/http://www.teichi.org:80/tei-content" title="See a list of every capture for this URL">6 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">27 Aug 2012 - 25 Oct 2016</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="550" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+            <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+    </div>
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/static/images/loading.gif" alt="loading" /></div>
+    </div>
+  </div></div></div></div><script type="text/javascript">
+__wm.bt(550,27,25,2,"web","http://www.teichi.org:80/tei-content","2016-10-25",1996);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+
+<div id="page-wrapper" style="width: 80%; margin-top: 14px; margin-bottom: 14px;">
+  <div id="page" style="padding: 10px;">
+
+    <div id="header" style="height: 90px;border-width: 1px;">
+    <div id="header-watermark" style="background-image: url(/web/20161025194619im_/http://www.teichi.org:80/sites/all/themes/mayo/images/pat-2.png);">
+    <div class="section clearfix">
+
+      
+              <div id="name-and-slogan" style="padding-left: 20px; padding-top: 15px;">
+                                    <div id="site-name"><strong>
+                <a href="/web/20161025194619/http://www.teichi.org:80/" title="Home" rel="home"><span>TEICHI</span></a>
+              </strong></div>
+                      
+                      <div id="site-slogan">The TEICHI Framework - Bringing TEI Lite to Drupal</div>
+                  </div> <!-- /#name-and-slogan -->
+      
+      
+      
+      <div class="clearfix cfie"></div>
+
+      
+    </div> <!-- /.section -->
+    </div> <!-- /#header-watermark -->
+    </div> <!-- /#header -->
+
+          <div id="navigation"><div class="section">
+        <ul id="main-menu" class="links inline clearfix"><li class="menu-317 first"><a href="/web/20161025194619/http://www.teichi.org:80/features">Features</a></li>
+<li class="menu-320"><a href="/web/20161025194619/http://www.teichi.org:80/documentation">Documentation</a></li>
+<li class="menu-321"><a href="/web/20161025194619/http://www.teichi.org:80/downloads">Downloads</a></li>
+<li class="menu-322"><a href="/web/20161025194619/http://www.teichi.org:80/development">Development</a></li>
+<li class="menu-654 last"><a href="/web/20161025194619/http://www.teichi.org:80/sample-texts">Sample texts</a></li>
+</ul>              </div></div> <!-- /.section, /#navigation -->
+    
+    <div class="clearfix cfie"></div>
+
+    <!-- for nice_menus, superfish -->
+        
+    <!-- space between menus and contents -->
+    <div class="spacer clearfix cfie"></div>
+
+
+    <div id="main-wrapper">
+    <div id="main" class="clearfix" style="">
+
+      
+      
+      
+      <div class="clearfix cfie"></div>
+
+
+      <!-- sidebars (left) -->
+            
+
+      <!-- main content -->
+      <div id="content" class="column" style="width: 100%;"><div class="section" style="margin-left: 0px; margin-right: 0px;">
+
+        
+                  <div id="breadcrumb"><div class="breadcrumb"><a href="/web/20161025194619/http://www.teichi.org:80/documentation">Documentation</a> &gt; </div></div>
+        
+        <a id="main-content"></a>
+                <h1 class="title" id="page-title">Installing and using the TEI Content module</h1>                <div class="tabs"></div>                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system clearfix">
+
+    
+  <div class="content">
+    <div id="node-15" class="node node-page clearfix" about="/tei-content" typeof="foaf:Document">
+
+  
+      <span property="dc:title" content="Installing and using the TEI Content module" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>The following pages outline the features, installation procedure, activation and use of the TEI Content module.</p>
+<p> </p>
+<h2><strong>Features</strong></h2>
+<p>TEI Content offers visualization of some key features of basic text editions. These features concern the display of the text, the display of notes and the bottom toolbar. The set of tags currently supported is a subset of TEI Lite (P5). The module distinguishes different types of quotes (inline with quotation marks, inline with italics, block quotes and block quotes as verse). Also, the module distinguishes between authorial and editorial notes. These notes are displayed in the right margin of the text and are folded by default. They can be unfolded by clicking on the corresponding number or on the placeholder in the margin.</p>
+<p>The module allows for the documentation of textual variants only in a way limited to the TEI Lite tagset. Specifically, you can encode you text using the &lt;choice&gt; tags to indicate variant readings of your document.1 The module distinguishes three sets of alternatives in &lt;choice&gt;, &lt;orig&gt;/&lt;sic&gt;, &lt;reg&gt;/&lt;corr&gt;, and &lt;abbr&gt;/&lt;expan&gt;. The reader can toggle between one and the other text view using the bottom toolbar. There is a basic display for the &lt;del&gt;, &lt;gap&gt;, &lt;add&gt; and &lt;unclear&gt; tags. The bottom toolbar also allows the users or readers to jump to any specific page in the chapter they are currently viewing by using the page index (to the left), or to jump to any page in the book by typing in the page number in the box (to the right).</p>
+<p> </p>
+<h2>Prerequisites</h2>
+<p>The main prerequisite for installing and using the TEI Content module (and the other modules) is to have Drupal 7 installed and functioning. Please note that older versions of Drupal are not supported. For help with installing Drupal and for server requirements, consult the relevant documentation on the Drupal website (<a href="https://web.archive.org/web/20161025194619/http://drupal.org/start">http://drupal.org/start</a>). You also need be able to access your Drupal installation and website with administrator rights so that you can login to the site and install modules, adjust settings, and upload content.</p>
+<p>Once Drupal 7 is installed, the Drupal core “book” module needs to be activated. Go to the “Modules” administration page, check the “Book” module and save the new configuration. In order to actually use TEI Content for publishing texts online, your TEI files need to adhere to the TEI-Lite tagset (P5). Consult the relevant page on the TEI’s website for more information about TEI Lite (<a href="https://web.archive.org/web/20161025194619/http://www.tei-c.org/Guidelines/Customization/Lite/">http://www.tei-c.org/Guidelines/Customization/Lite/</a>). There is a limited number of tags implemented in the current release of TEICHI. TEI Content allows for the use of special font files should you wish to customize this aspect of your edition. However, this is perfectly optional and standard font classes may be used.</p>
+<p> </p>
+<h2><strong>Installation and activation</strong></h2>
+<p>The installation follows the standard procedure for modules in Drupal 7. You can download the module files from <a href="/web/20161025194619/http://www.teichi.org:80/downloads">teichi.org</a>, unzip them and upload them via FTP to the appropriate folder of your Drupal installation (usually &lt;Drupal&gt;/sites/all/modules). Alternatively, you can go to the “Module” section of the Administration menu, click on “Install new module” and choose to either paste the URL of the module files into the field provided or choose the zipped module files from your local hard drive. Click “install” to confirm this action. For more details on these ways of installing modules, please consult the relevant Drupal documentation (<a href="https://web.archive.org/web/20161025194619/http://drupal.org/documentation/%20install/%20modules-theme">http://drupal.org/documentation/ install/ modules-theme</a>s).</p>
+<p>Once the TEI Content module has been installed, a section called “TEICHI” with an entry for “TEI Content” appears towards the bottom of the list of modules in the “Module” section of the Administration menu. You need to activate the module by checking the checkbox and clicking on “Save configuration”. The appropriate entry will then show a “Preferences” link. This link leads you to the settings page of the TEI Content module. When the module is activated, a new content type is automatically created. It is called “TEICHI” and its settings can be modified in the “Configuration” &gt; “Text formats” section of the Administration page. There, click on “configure” in the “teichi” entry, activate the text format for all types of users (e.g., anonymous, authenticated, administrator) and save this configuration.</p>
+<p>You should also activate the text format for those of Drupal’s menus that you may wish to use. Use and customization The “Settings” page of the module is accessed in the following way: in the “Administration” section of Drupal, click on “Configuration”, then find the “TEICHI” group in which there is an entry for the “TEI Content” module. Click on the “TEI Content” link there, and you will be taken to the settings page, which has three tabs: Display settings, Documents upload, and Fonts upload. They allow you to customize the visual appearance, to upload documents and to upload fonts. Once you uploaded documents to your TEI book, this page will also feature a list of all book pages that belong to the TEICHI content type, including their starting and ending pages as well as links to directly view or delete each of the book pages.</p>
+<p> </p>
+<h2><strong>Uploading TEI documents</strong></h2>
+<p>To upload TEI documents into the Drupal website, you need to be logged on to your Drupal installation. Navigate to the “Administration” section; go to “Configuration” and there to the entry for the “TEICHI” modules; navigate to the TEI Content section. On the “Documents upload” tab, you find an upload form. Using the button labeled “choose” (or similar, depending on your browser and language settings), you can select the TEI file to be uploaded from your local folder into the Drupal site. You can only upload files ending on .txt, .xml or .tei, although the TEI files should end on .xml anyway. Trying to upload other file formats will not be accepted and prompt an error message.</p>
+<p>When publishing a book, the TEI Content module allows for a book structure based on a division of chapters. Each chapter corresponds to one TEI file and hence to one Drupal node. Note that because TEI Content was developed for the electronic publication of a book in Drupal, each division of the book (front matter, preface, individual chapters, back matter) corresponds to one node in Drupal and represents an individual .xml file. This means the TEI-encoded document needs to be split up in those constituent parts before being uploaded. The header should be included with each of the parts. The first file you upload should contain only the header without any text and with a div-id "top level" and the div &lt;head&gt; corresponding to the title of the work or book being published. This file should be used to create a top-level book page.3</p>
+<p>After selecting the file to be uploaded, you can choose the type of node that file should be. Select “book page” here. After this, click on upload. When you upload a file, you will be asked whether you want to include this file into the index created for the TEI Search module which you may or may have installed. Leave the box checked if you want that. When uploading the rest of the files, you can specify that they belong to that (or another) book by choosing that book from the dropdown list. Again, after selecting the file to be uploaded, choose the type of node that file should be and select “book page”. In the drop-down-field below, select the book your file belongs to. After this, click on upload.</p>
+<p>After the successful upload, Drupal will give you a message in the top region of the page, indicating the node ID of your file, the title extracted from the file, the page numbers recognized and the ID of the relevant “div”.4 Of course, you can upload TEI documents corresponding to more than one book and assign them to individual Drupal books. Once you uploaded your new TEI file or files, they will be listed in the main menu of the TEI Content module. There, you can view and delete the files. Of course, the files will also be listed on Drupal’s main “Content” administration page. There, you can view, edit and remove the files.</p>
+<p> </p>
+<h2><strong>Uploading your own fonts</strong></h2>
+<p>In case you would like to use your own fonts, you can upload them and they will be integrated when the documents are displayed. Go to the “Fonts” tab of the “TEI Content” preferences page. Choose the font file from your local hard drive and click the “upload” button. A progress bar will be shown. Only files ending on .otf, .ttf, or .woff are allowed here, since these fonts are the most widely used and hence most likely to be compatible with most browsers. Once the upload was successful, the file appears on the “Fonts” page, with an icon and the file name. If you want to remove such a font, click on the “remove” button next to it.</p>
+<p> </p>
+<h2><strong>Changing the display options</strong></h2>
+<p>TEI Content allows you to customize some of the key visualization features. This can be useful when adapting the module to one of the many Drupal themes or for better readability. In the TEI Content “preferences” menu, choose the “Display” tab. There, you can set colors, sizes, fonts for certain elements of the displayed text. Here, you can also adapt or translate some of the module’s buttons text. Click on the titles of the groups to unfold the menus. In the “color” section, you may customize the display of the two variant transcriptions TEI Content allows (&lt;reg&gt;/&lt;corr&gt; and &lt;abbr&gt;/&lt;expan&gt; on the one hand, &lt;orig&gt;/&lt;sic&gt; on the other), of the color of the marginal notes, and for the background color of the bottom toolbar. You can either specify a hexadecimal color code or use the color picker (use the circle to choose the color and the square to indicate its intensity).</p>
+<p>More general color settings can be adjusted using the theme’s options. In the “sizes” section, you can choose the size of certain text elements. Recommended units are %, pt, and px. Units such as em, cm or mm are also allowed. You can specify the width of the marginal notes (indicate a percentage for best results) as well as the width of the bottom toolbar. The next option allows you to choose the font classes or font types. In case you did not upload fonts, you can only choose font classes (serif, sans serif, monospaced) and the browser will choose an appropriate rendering. If you uploaded fonts, they will also appear here.</p>
+<p>Because there is no “back-to-default” option right now for fonts unsupported by certain browsers, it is recommended to use font classes. Finally, you can adapt or translate some of the texts that are displayed to the users. Some of them concern the bottom toolbar; others concern error or feedback messages to the users. You may have to clear the cache or reload the page to see those changes take effect. In case you want to change settings beyond those offered in the GUI, you may of course apply modifications to the relevant .css file, but you will then largely be on your own. To do this, find the file “teichi.css” in the “/drupal/sites/all/modules/teichi/css” folder. In many cases, you will also have to apply corresponding changes to the file “teichi.cssfile.inc” in the “…/teichi/” folder, where the default setting are stored. This makes sure that should you use the GUI next time and save other settings, your manual settings are not overwritten.</p>
+</div></div></div>  <div id="book-navigation-4" class="book-navigation">
+    
+        <div class="page-links clearfix">
+              <a href="/web/20161025194619/http://www.teichi.org:80/introduction" class="page-previous" title="Go to previous page">‹ Introduction and general requirements</a>
+                    <a href="/web/20161025194619/http://www.teichi.org:80/documentation" class="page-up" title="Go to parent page">up</a>
+                    <a href="/web/20161025194619/http://www.teichi.org:80/tei-download" class="page-next" title="Go to next page">Installing and using the TEI Download module ›</a>
+          </div>
+    
+  </div>
+  </div>
+
+  
+   <!-- moved to outside of the node div -->
+
+</div>
+
+ <!-- added -->
+
+  </div>
+</div>
+  </div>
+        
+      </div></div> <!-- /.section, /#content -->
+
+
+      <!-- sidebars (right) -->
+            
+
+      <div class="clearfix cfie"></div>
+
+      
+      <div class="clearfix cfie"></div>
+
+
+      
+    </div> <!-- /#main -->
+    </div> <!-- /#main-wrapper -->
+
+    <!-- space between contents and footer -->
+    <div id="spacer" class="clearfix cfie"></div>
+
+    <div id="footer-wrapper">
+      
+      
+    </div> <!-- /#footer-wrapper -->
+
+
+  </div> <!-- /#page -->
+</div> <!-- /#page-wrapper -->
+    <div class="region region-page-bottom">
+    
+  <script src="//web.archive.org/web/20161025194619js_/http://static.getclicky.com/js" type="text/javascript"></script>
+  <script type="text/javascript">try { clicky.init(66577478); }catch(e){}</script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//web.archive.org/web/20161025194619im_/http://in.getclicky.com/66577478ns.gif"/></p></noscript>  </div>
+</body>
+</html>
